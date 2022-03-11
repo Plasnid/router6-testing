@@ -2,7 +2,6 @@ import ReactDOM from "react-dom";
 import React, {useState} from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
-//import Home from "./pages/Home";
 import NameForm from "./pages/NameForm";
 import Thanks from "./pages/Thanks";
 import Blogs from "./pages/Blogs";
