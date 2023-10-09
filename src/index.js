@@ -11,6 +11,7 @@ import Projects from "./pages/Projects";
 import Aliens from "./pages/Aliens";
 import Zerkblatt from "./pages/Zerkblatt";
 import Zargon from "./pages/Zargon";
+import Who from "./pages/Who";
 
 export default function App() {
 
@@ -32,6 +33,7 @@ export default function App() {
           <Route path="aliens/*" Component={ Aliens }>
                 <Route path="zerkblatt" Component={ Zerkblatt } />
                 <Route path="zargon" Component={ Zargon } />              
+                <Route path="*" Component={ Who } />              
         </Route>
           <Route path="*" element={<NoPage />} />
         </Route>
