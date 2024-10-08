@@ -4,7 +4,7 @@ const Zerkblatt = () => {
     return (
         <>
             <p>Zerkblatt is a wonderfully tropical place with friendly aliens.</p>
-            <img src={Alien} className="treeAlien"></img>
+            <img src={Alien} alt="Friendly Tree Alien" className="treeAlien"></img>
         </>
     );
 }

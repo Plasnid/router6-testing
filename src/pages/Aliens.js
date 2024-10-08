@@ -5,7 +5,7 @@ import './aliens.css';
 const Aliens = () => {
     return (
         <>
-            <h1>Aliens</h1>
+            <h1 id="alienTitle">Aliens</h1>
             <Outlet></Outlet>
         </>
     );

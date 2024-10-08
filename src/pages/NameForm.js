@@ -12,8 +12,11 @@ function NameForm(props){
     return (
         <form onSubmit={goToThanks}>
             <section>
+                <label>Salutation:
+                    <input type="text" onChange={props.handleSalutationChange}/>
+                </label>
                 <label>Name:
-                    <input type="text" onChange={props.handleChange}/>
+                    <input type="text" onChange={props.handleNameChange}/>
                 </label>
             </section>
             <input type="submit" value="Submit" />

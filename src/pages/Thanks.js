@@ -1,7 +1,7 @@
 function Thanks(props){
     return (
         <section>
-            <h2>Thanks so much {props.namer}!</h2>
+            <h2>Thanks so much {props.salutation} {props.namer}!</h2>
             <p>You are awesome</p>
         </section>
     )

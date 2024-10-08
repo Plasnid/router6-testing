@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 
-function Projects(props){
+function Projects(){
     const params = useParams();
     return (
         <section>

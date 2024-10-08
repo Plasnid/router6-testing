@@ -16,18 +16,23 @@ import Who from "./pages/Who";
 export default function App() {
 
   const [namer, setNamer] = useState('');
-  const handleChange = (e) => {
+  const [salutation, setSalutation] = useState('');
+  const handleNameChange = (e) => {
     console.log(e.target.value);
     setNamer(e.target.value);
+  }
+  const handleSalutationChange = (e) => {
+    console.log(e.target.value);
+    setSalutation(e.target.value);
   }
 
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<NameForm handleChange={(e)=>handleChange(e)}/>} />
+          <Route index element={<NameForm handleSalutationChange={(e)=>handleSalutationChange(e)} handleNameChange={(e)=>handleNameChange(e)}/>} />
           <Route path="blogs" element={<Blogs />} />
-          <Route path="thanks" element={<Thanks namer={namer}/>} />
+          <Route path="thanks" element={<Thanks salutation={salutation} namer={namer}/>} />
           <Route path="contact" element={<Contact />} />
           <Route path="projects/:projectId" element={<Projects/>} />
           <Route path="aliens/*" Component={ Aliens }>
